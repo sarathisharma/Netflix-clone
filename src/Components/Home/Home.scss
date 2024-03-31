@@ -1,0 +1,44 @@
+$bg : rgb(16, 16, 16);
+.banner{
+    height: 600px;
+    background-color: $bg;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    >h1{
+        font-size: 4rem;
+        width: 50%;
+    }
+    >p{
+        width:60%;
+        padding:1rem;
+    }
+}
+
+.row {
+    padding: 1rem;
+    background-color: $bg;
+    >h2{
+        margin:0.3rem;
+        font-weight:400;
+    }
+>div{
+    display:flex;
+    overflow-x:auto;
+    
+}
+}
+
+.card {
+width: 200px;
+margin:0.3rem;
+cursor: pointer;
+transition: transform 0.5s;
+&:hover {
+    transform: translateY(-10px) scale(1.05);
+}
+
+}
